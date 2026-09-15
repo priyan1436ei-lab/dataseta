@@ -1,0 +1,183 @@
+{
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "macro_precision": 1.0,
+  "macro_recall": 1.0,
+  "macro_f1": 1.0,
+  "weighted_precision": 1.0,
+  "weighted_recall": 1.0,
+  "weighted_f1": 1.0,
+  "confusion_matrix": [
+    [
+      8,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      12,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      13,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      9,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      11
+    ]
+  ],
+  "confusion_matrix_normalized": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "classification_report": {
+    "Blackleg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "Bovine_Mastitis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 12.0
+    },
+    "Foot_and_Mouth_Disease": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 13.0
+    },
+    "Healthy_Cattle": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 9.0
+    },
+    "Lumpy_Skin_Disease": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 11.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 53.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 53.0
+    }
+  },
+  "expected_calibration_error": 0.022787602442615434,
+  "test_samples_count": 53,
+  "feature_names": [
+    "age_years",
+    "weight_kg",
+    "body_temperature_c",
+    "heart_rate_bpm",
+    "respiratory_rate_bpm",
+    "milk_yield_drop_pct",
+    "breed_Gir",
+    "breed_Holstein_Friesian",
+    "breed_Jersey",
+    "breed_Murrah_Buffalo",
+    "breed_Red_Sindhi",
+    "breed_Sahiwal",
+    "sex_Female",
+    "sex_Male",
+    "appetite_Anorexia",
+    "appetite_Normal",
+    "appetite_Reduced",
+    "activity_level_Active",
+    "activity_level_Depressed",
+    "activity_level_Lethargic",
+    "activity_level_Normal",
+    "activity_level_Recumbent",
+    "vaccination_status_Overdue",
+    "vaccination_status_Partial",
+    "vaccination_status_Unvaccinated",
+    "vaccination_status_Up_to_date",
+    "symptom_abnormal_milk_clots",
+    "symptom_acute_fever",
+    "symptom_crepitant_swelling",
+    "symptom_depression",
+    "symptom_excessive_salivation",
+    "symptom_fever",
+    "symptom_lameness",
+    "symptom_loss_of_appetite",
+    "symptom_nasal_discharge",
+    "symptom_oral_vesicles",
+    "symptom_painful_quarter",
+    "symptom_recumbency",
+    "symptom_reduced_milk",
+    "symptom_severe_lameness",
+    "symptom_skin_nodules",
+    "symptom_swollen_lymph_nodes",
+    "symptom_swollen_udder"
+  ],
+  "target_classes": [
+    "Blackleg",
+    "Bovine_Mastitis",
+    "Foot_and_Mouth_Disease",
+    "Healthy_Cattle",
+    "Lumpy_Skin_Disease"
+  ]
+}

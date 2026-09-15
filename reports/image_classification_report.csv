@@ -1,0 +1,9 @@
+,precision,recall,f1-score,support
+Blackleg,1.0,1.0,1.0,6.0
+Bovine_Mastitis,1.0,1.0,1.0,6.0
+Foot_and_Mouth_Disease,1.0,1.0,1.0,6.0
+Healthy_Cattle,1.0,1.0,1.0,6.0
+Lumpy_Skin_Disease,1.0,1.0,1.0,6.0
+accuracy,1.0,1.0,1.0,1.0
+macro avg,1.0,1.0,1.0,30.0
+weighted avg,1.0,1.0,1.0,30.0

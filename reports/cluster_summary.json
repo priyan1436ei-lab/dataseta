@@ -1,0 +1,15 @@
+{
+  "spatial_clustering": {
+    "algorithm": "DBSCAN (Haversine)",
+    "epsilon_km": 35.0,
+    "min_samples": 4,
+    "detected_clusters_count": 2,
+    "noise_cases_count": 0
+  },
+  "temporal_analysis": {
+    "start_date": "2026-08-01",
+    "end_date": "2026-08-30",
+    "total_monitoring_days": 30
+  },
+  "epidemiological_notice": "Detected spatial hotspots represent localized screening density anomalies. They do not constitute automated epidemic predictions without confirmatory diagnostic sampling."
+}

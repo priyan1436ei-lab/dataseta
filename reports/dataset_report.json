@@ -1,0 +1,133 @@
+{
+  "image_dataset": {
+    "dataset_directory": "C:\\Users\\priya\\Downloads\\dataset\\data\\images",
+    "total_valid_images": 200,
+    "num_classes": 5,
+    "classes": [
+      "Blackleg",
+      "Bovine_Mastitis",
+      "Foot_and_Mouth_Disease",
+      "Healthy_Cattle",
+      "Lumpy_Skin_Disease"
+    ],
+    "class_distribution": {
+      "Blackleg": 40,
+      "Bovine_Mastitis": 40,
+      "Foot_and_Mouth_Disease": 40,
+      "Healthy_Cattle": 40,
+      "Lumpy_Skin_Disease": 40
+    },
+    "min_samples_per_class": 40,
+    "max_samples_per_class": 40,
+    "class_imbalance_ratio": 1.0,
+    "formats": {
+      "JPEG": 200
+    },
+    "resolution_stats": {
+      "min_width": 256,
+      "max_width": 256,
+      "mean_width": 256.0,
+      "min_height": 256,
+      "max_height": 256,
+      "mean_height": 256.0
+    },
+    "corrupted_images_count": 0,
+    "corrupted_images": [],
+    "duplicate_images_count": 0,
+    "duplicate_images": [],
+    "zero_byte_files_count": 0,
+    "unsupported_files_count": 0
+  },
+  "clinical_dataset": {
+    "file_path": "C:\\Users\\priya\\Downloads\\dataset\\data\\clinical\\clinical_data.csv",
+    "total_rows": 350,
+    "total_columns": 17,
+    "columns": [
+      "animal_id",
+      "age_years",
+      "breed",
+      "sex",
+      "weight_kg",
+      "body_temperature_c",
+      "heart_rate_bpm",
+      "respiratory_rate_bpm",
+      "milk_yield_drop_pct",
+      "appetite",
+      "activity_level",
+      "vaccination_status",
+      "symptoms",
+      "latitude",
+      "longitude",
+      "recorded_date",
+      "disease"
+    ],
+    "data_types": {
+      "animal_id": "str",
+      "age_years": "float64",
+      "breed": "str",
+      "sex": "str",
+      "weight_kg": "float64",
+      "body_temperature_c": "float64",
+      "heart_rate_bpm": "int64",
+      "respiratory_rate_bpm": "int64",
+      "milk_yield_drop_pct": "float64",
+      "appetite": "str",
+      "activity_level": "str",
+      "vaccination_status": "str",
+      "symptoms": "str",
+      "latitude": "float64",
+      "longitude": "float64",
+      "recorded_date": "str",
+      "disease": "str"
+    },
+    "missing_values": {
+      "animal_id": 0,
+      "age_years": 0,
+      "breed": 0,
+      "sex": 0,
+      "weight_kg": 0,
+      "body_temperature_c": 0,
+      "heart_rate_bpm": 0,
+      "respiratory_rate_bpm": 0,
+      "milk_yield_drop_pct": 0,
+      "appetite": 0,
+      "activity_level": 0,
+      "vaccination_status": 0,
+      "symptoms": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "recorded_date": 0,
+      "disease": 0
+    },
+    "duplicate_rows": 0,
+    "target_column": "disease",
+    "target_distribution": {
+      "Foot_and_Mouth_Disease": 81,
+      "Bovine_Mastitis": 77,
+      "Lumpy_Skin_Disease": 74,
+      "Healthy_Cattle": 61,
+      "Blackleg": 57
+    },
+    "numerical_columns": [
+      "age_years",
+      "weight_kg",
+      "body_temperature_c",
+      "heart_rate_bpm",
+      "respiratory_rate_bpm",
+      "milk_yield_drop_pct",
+      "latitude",
+      "longitude"
+    ],
+    "categorical_columns": [
+      "animal_id",
+      "breed",
+      "sex",
+      "appetite",
+      "activity_level",
+      "vaccination_status",
+      "symptoms",
+      "recorded_date",
+      "disease"
+    ]
+  }
+}

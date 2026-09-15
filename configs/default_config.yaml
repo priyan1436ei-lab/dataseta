@@ -1,0 +1,64 @@
+# PashuRaksha AI Pipeline Configuration
+
+project:
+  name: "PashuRaksha AI"
+  version: "1.0.0"
+  seed: 42
+
+image_model:
+  architecture: "mobilenet_v3_large"
+  pretrained: true
+  input_size: [224, 224]
+  normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+  training:
+    stage1_epochs: 15
+    stage2_epochs: 25
+    batch_size: 16
+    stage1_lr: 0.001
+    stage2_lr: 0.0001
+    weight_decay: 0.0001
+    early_stopping_patience: 6
+    mixed_precision: true
+  confidence_threshold: 0.60
+
+clinical_model:
+  algorithm: "xgboost"
+  n_estimators: 150
+  max_depth: 5
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+  random_state: 42
+
+anomaly_detector:
+  algorithm: "IsolationForest"
+  contamination: 0.05
+  n_estimators: 150
+  random_state: 42
+  percentile_threshold: 95.0
+
+multimodal_fusion:
+  weights:
+    image_weight: 0.45
+    clinical_weight: 0.40
+    history_weight: 0.15
+  agreement_threshold: 0.35
+  risk_score_bins:
+    low: [0, 30]
+    moderate: [31, 60]
+    high: [61, 80]
+    critical: [81, 100]
+
+safety_rules:
+  critical_temperatures:
+    cattle_high: 40.5
+    cattle_low: 37.0
+  emergency_symptoms:
+    - "severe_respiratory_distress"
+    - "unable_to_stand"
+    - "recumbency"
+    - "seizures"
+    - "uncontrolled_bleeding"
+    - "acute_bloat"

@@ -1,0 +1,14 @@
+{
+  "model_type": "IsolationForest",
+  "embedding_dim": 960,
+  "anomaly_threshold": 0.45216714268364044,
+  "contamination": 0.05,
+  "n_estimators": 150,
+  "validation_stats": {
+    "min_score": 0.3621849625938165,
+    "max_score": 0.49905602974127283,
+    "mean_score": 0.4091113282923952,
+    "threshold_95pct": 0.45216714268364044
+  },
+  "disclaimer": "Threshold is a prototype decision boundary. High anomaly scores indicate out-of-distribution patterns requiring veterinary examination."
+}
